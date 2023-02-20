@@ -1,6 +1,6 @@
 require 'account'
 
-describe 'Account class' do
+describe Account do
   xit 'prints in the correct format' do
     io = double(:io)
     account = Account.new(io)

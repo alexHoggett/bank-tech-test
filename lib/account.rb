@@ -17,6 +17,6 @@ class Account
 
   def print
     # prints the contents of the history array to the screen
-    end
+
   end
 end
