@@ -17,11 +17,11 @@ irb -r ./lib/account.rb
 ```
 
 ```irb
-account = Account.new
-account.deposit(1000)
-account.deposit(2000)
-account.withdraw(500)
-account.print
+3.0.0 :001 > account = Account.new
+3.0.0 :001 > account.deposit(1000)
+3.0.0 :001 > account.deposit(2000)
+3.0.0 :001 > account.withdraw(500)
+3.0.0 :001 > account.print
 ```
 
 ## Run Tests
