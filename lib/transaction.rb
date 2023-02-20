@@ -10,10 +10,10 @@ class Transaction
   end
 
   def get_amount
-    @amount.abs
+    '%.2f' % @amount
   end
 
   def get_balance
-    @balance
+    '%.2f' % @balance
   end
 end
