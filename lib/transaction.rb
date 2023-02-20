@@ -10,6 +10,10 @@ class Transaction
   end
 
   def get_amount
-    @amount
+    @amount.abs
+  end
+
+  def get_balance
+    @balance
   end
 end

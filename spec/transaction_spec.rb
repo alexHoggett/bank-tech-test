@@ -13,6 +13,15 @@ describe Transaction do
     expect(transaction.get_amount).to eq 2000
   end
 
-  xit 'returns the balance after that transaction' do
+  it 'returns the balance after that transaction' do
+    transaction = Transaction.new(DateTime.now, 2000, 500)
+    expect(transaction.get_balance).to eq 2500
+  end
+
+
+  it 'returns the absolute amount of a transaction and takes money away from the balance' do
+    transaction = Transaction.new(DateTime.now, -1000, 3000)
+    expect(transaction.get_amount).to eq 1000
+    expect(transaction.get_balance).to eq 2000
   end
 end
