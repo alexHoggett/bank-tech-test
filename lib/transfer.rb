@@ -1,4 +1,4 @@
-class Transaction
+class Transfer
   def initialize(date, amount, prev_balance)
     @date = date
     @amount = amount
