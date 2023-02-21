@@ -29,19 +29,21 @@ An example:
 
 ```irb
 3.0.0 :001 > account = Account.new
-3.0.0 :001 > account.deposit(1000)
-3.0.0 :001 > account.deposit(2000)
-3.0.0 :001 > account.withdraw(500)
+3.0.0 :001 > account.deposit(2000, DateTime.new(2022, 3, 2))
+3.0.0 :001 > account.deposit(200)
+3.0.0 :001 > account.withdraw(100)
 3.0.0 :001 > account.print
 ```
+
+You can optionally provide a parameter for the date of the transfer, it will default to the current date.
 
 This will print:
 
 ```
 date || credit || debit || balance
-14/01/2023 || || 500.00 || 2500.00
-13/01/2023 || 2000.00 || || 3000.00
-10/01/2023 || 1000.00 || || 1000.00
+21/02/2023 || || 100.00 || 2100.00                   
+21/02/2023 || 200.00 || || 2200.00                   
+02/03/2022 || 2000.00 || || 2000.00 
 ```
 
 ## Run Tests
