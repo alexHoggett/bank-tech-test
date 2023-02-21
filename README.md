@@ -1,9 +1,16 @@
 # Bank Tech Test
 
+You will need to have ruby installed.
+
 ## Installation
 
 ```bash
+# get you the latest Ruby version
+rvm get stable
+rvm use ruby --latest --install --default
 gem install bundler
+
+# install the gems
 bundle install
 ```
 
